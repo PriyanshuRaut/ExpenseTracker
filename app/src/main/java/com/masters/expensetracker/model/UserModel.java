@@ -5,6 +5,8 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import java.util.Date;
+
 @Entity(tableName = "userExpense_Info")
 public class UserModel {
 
@@ -35,6 +37,13 @@ public class UserModel {
 
 
     private String type;
+
+    private Date date;
+
+    public Date date_Data(Date date){
+
+        return date;
+    }
 
 
 
